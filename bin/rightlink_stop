@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. /opt/rightscale/etc/init.d/rightscale_functions
+source /opt/rightscale/etc/init.d/rightscale_functions
 
 logger -t RightScale "RightLink service stop."
 
