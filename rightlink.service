@@ -1,0 +1,13 @@
+[Unit]
+Description=RightScale RightLink
+After=rightscale.service network.target
+Requires=network.target
+Conflicts=rightscale-decommission.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/rightscale/bin/rightlink_start
+ExecReload=/opt/rightscale/bin/rightlink_reload
+
+[Install]
+WantedBy=multi-user.target
