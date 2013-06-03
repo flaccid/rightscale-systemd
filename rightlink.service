@@ -5,7 +5,9 @@ Requires=network.target
 Conflicts=rightscale-decommission.target
 
 [Service]
-Type=oneshot
+Type=simple
+RemainAfterExit=yes
+TimeoutSec=360
 ExecStart=/opt/rightscale/bin/rightlink_start
 ExecReload=/opt/rightscale/bin/rightlink_reload
 
