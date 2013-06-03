@@ -15,5 +15,5 @@ install_right_link_scripts
 enroll_right_link_instance
 deploy_right_link_agent
 enable_right_link_core_dumps
-start_right_link_agent
-update_boot_state
+start_right_link_agent | logger -t RightLink
+update_boot_state | logger -t RightScale
