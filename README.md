@@ -1,6 +1,6 @@
 rightscale-systemd
 ==================
 
-RightScale/RightLink systemd support (services)
+RightScale/RightLink systemd support (system services).
 
-Note: https://github.com/rightscale/right_link_package is not public so `bin/rightscale_functions` had to be copied from the upstream source.
+Depends upon rightscale-control (https://github.com/flaccid/rightscale-control).
