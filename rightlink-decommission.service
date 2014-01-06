@@ -6,7 +6,7 @@ Before=shutdown.target
 
 [Service]
 Type=oneshot
-ExecStart=/opt/rightscale/bin/rightscale_decommission
+ExecStart=/usr/bin/rightscale_decommission
 TimeoutSec=3600
 
 [Install]

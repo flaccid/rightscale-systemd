@@ -8,8 +8,8 @@ Conflicts=rightscale-decommission.target
 Type=simple
 RemainAfterExit=yes
 TimeoutSec=360
-ExecStart=/opt/rightscale/bin/rightlink_start
-ExecReload=/opt/rightscale/bin/rightlink_reload
+ExecStart=/usr/bin/rightlink_start
+ExecReload=/usr/bin/rightlink_reload
 
 [Install]
 WantedBy=multi-user.target
